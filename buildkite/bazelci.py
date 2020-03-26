@@ -52,7 +52,7 @@ THIS_IS_SPARTA = True
 
 CLOUD_PROJECT = "bazel-public" if THIS_IS_TRUSTED else "bazel-untrusted"
 
-GITHUB_BRANCH = {"bazel": "master", "bazel-trusted": "master", "bazel-testing": "testing"}[
+GITHUB_BRANCH = {"bazel": "pcloudy-test", "bazel-trusted": "pcloudy-test", "bazel-testing": "testing"}[
     BUILDKITE_ORG
 ]
 
@@ -153,7 +153,7 @@ DOWNSTREAM_PROJECTS_PRODUCTION = {
     },
     "Buildtools": {
         "git_repository": "https://github.com/bazelbuild/buildtools.git",
-        "http_config": "https://raw.githubusercontent.com/bazelbuild/buildtools/master/.bazelci/presubmit.yml",
+        "http_config": "https://raw.githubusercontent.com/meteorcloudy/buildtools/pcloudy-test/.bazelci/presubmit.yml",
         "pipeline_slug": "buildtools",
     },
     "CLion Plugin": {

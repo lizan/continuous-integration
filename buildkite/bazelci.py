@@ -1711,7 +1711,7 @@ def execute_bazel_test(
     incompatible_flags,
 ):
     aggregated_flags = [
-        "--flaky_test_attempts=3",
+        # "--flaky_test_attempts=3",
         "--build_tests_only",
         "--local_test_jobs=" + concurrent_test_jobs(platform),
     ]
